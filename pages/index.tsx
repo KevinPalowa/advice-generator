@@ -24,9 +24,7 @@ const Home: NextPage = () => {
   );
   const handleClick = () => {
     setIsLoading(true);
-    setTimeout(() => {
-      getAdvice();
-    }, 3000);
+    getAdvice();
     setIsLoading(false);
   };
   isLoading ? console.log("loading") : "Not Loading";
